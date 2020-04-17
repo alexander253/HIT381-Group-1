@@ -1,5 +1,5 @@
 body{
-  background-image: linear-gradient(to bottom right,#94958B, white);
+  background-image: linear-gradient(to bottom right,#EEEEEE, #EEEEEE);
   margin-top: 130px;
   margin-bottom: 130px;
 
@@ -15,7 +15,7 @@ h3, h4, h5{
   margin-bottom: 5px;
   position: fixed;
   width: 100%;
-  background-color:#97ABB1;
+  background-color:#E4E3D3;
   z-index: 1;
 
 
@@ -26,10 +26,10 @@ h3, h4, h5{
   margin-top: -65px;
   position: fixed;
   z-index: 1;
-  background-color:#97ABB1;
+  background-color:#E4E3D3;
   width: 100%;
   border-style: solid;
-  border-color: black;
+  border-color: white;
   border-width: 1px;
   border-left: none;
   border-right: none;
@@ -37,8 +37,11 @@ h3, h4, h5{
 
 .heading h1{
   display: inline-block;
-  color: black;
+  color: #53A548;
   text-align: center;
+}
+#uwu{
+  color: black;
 }
 
 .content, .trackContent, .rotate-in-top, .swirl-in-fwd{
@@ -49,6 +52,7 @@ h3, h4, h5{
   border-width: 0.5px;
   padding: 20px;
   color:black;
+  border-radius: 5px;
 
 
 }
@@ -73,11 +77,14 @@ h3, h4, h5{
 }
 
 .nav_menu{
-  background-color: #97ABB1;
+  background-color: #E4E3D3;
   position: fixed;
   bottom: 0px;
   width: 100%;
   text-align: center;
+  width: 100%;
+
+
 
 
  }
@@ -91,7 +98,10 @@ h3, h4, h5{
   margin-left: 10px;
   margin-right: 10px;
 
+
 }
+
+
 
 
 /*
@@ -250,4 +260,8 @@ ul {
 
 img {
   width: 80%;
+}
+
+.secondary_nav a {
+  color: black;
 }
