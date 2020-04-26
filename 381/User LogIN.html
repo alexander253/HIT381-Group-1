@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<title>UwU Foods</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="HTML,CSS,XML, charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum scale=1.0, minimum scale=1.0, user-scaleable=no">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<meta name="author" content="Group1">
+</head>
+
+<body>
+	<div id="container">
+		<header>
+			<div class="topnav">
+				<a href="Main.html"><Img src="img/Logo.jpg" alt="UwWFoodsLogo"></a>
+			  <div class="topnav-right">
+					<div id="mysidenav" class="sidenav">
+					   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					   <ul class="mainmenu">
+					        <li><a href="Main.html">Home</a></li>
+									<li><a href="">Menu</a></li>
+					        <li><a href="">About US</a></li>
+									<li><a href="">FAQ</a></li>
+									<li><a href="">Contac US</a></li>
+					     </ul>
+					  </div>
+
+					<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+					<script>
+					function openNav() {
+					document.getElementById("mysidenav").style.width = "250px";
+					}
+
+					function closeNav() {
+					document.getElementById("mysidenav").style.width = "0";
+					}
+					</script>
+			  </div>
+			</div>
+		</header>
+
+		<section id="boxes">
+		<div class="container">
+		<div class="box">
+
+				<form action="Menu.html" class="login-form">
+			        <h1>Login</h1>
+
+			        <div class="txtb">
+			          <input type="text">
+			          <span data-placeholder="Username"></span>
+			        </div>
+
+			        <div class="txtb">
+			          <input type="password">
+			          <span data-placeholder="Password"></span>
+			        </div>
+
+			        <input type="submit" class="logbtn" value="Login">
+
+			        <div class="bottom-text">
+			          Don't have account? <a href="#">Sign up</a>
+			        </div>
+<hr>
+							<p class="or"> OR</p>
+							<a href="#" class="logbtn"><i class="fa fa-facebook fa-fw"></i> Login with Facebook</a>
+							<a href="#" class="logbtn"><i class="fa fa-google fa-fw"></i> Login with Google+</a>
+			      </form>
+
+
+		</div></div>
+		</section>
+
+		<footer>
+			<style>
+			.hbar
+			#fsettl:hover{text-decoration:underline}
+			.hbar a:hover{text-decoration:underline}
+			.fbar p,.fbar a,#fsettl,#fsett a{color:#d2d2d2}
+			.fbar a:hover,#fsett a:hover{color:#f5efe1}
+			.fbar{font-size:small}</style>
+
+			<div class="hbar" id="fbar"><div class="fbar">
+				<p> Follow UwU Foods </p>
+
+	  <div class="footer-social-icons">
+	    <ul>
+	      <li><a><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+	      <li><a><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+	      <li><a><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+	      <li><a><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+	      </ul>
+	    </div>
+
+			<p><a href="Privacypolicy.html">Privacy Policy</a>  |
+			<u>Copyright © 2020</u> by Group1 | All Right Reserved.</p>
+			<h5>CDU, Darwin, NT, Australia &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; HIT 381 Human Interaction and Design</h5>
+			</div></div>
+		</footer>
+
+		<script type="text/javascript">
+		$(".txtb input").on("focus",function(){
+			$(this).addClass("focus");
+		});
+
+		$(".txtb input").on("blur",function(){
+			if($(this).val() == "")
+			$(this).removeClass("focus");
+		});
+
+		</script>
+
+	</body>
+</html>
