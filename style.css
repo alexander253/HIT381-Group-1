@@ -1,5 +1,5 @@
 body{
-  background-image: linear-gradient(to bottom right,#EEEEEE, #EEEEEE);
+  background-color: white;
   margin-top: 130px;
   margin-bottom: 130px;
 
@@ -11,20 +11,22 @@ h3, h4, h5{
 
 .heading {
   margin-top: -130px;
-  text-align: center;
-  margin-bottom: 5px;
-  position: fixed;
+  text-align: left;
+  position: static;
   width: 100%;
   background-color:#E4E3D3;
   z-index: 50;
+  padding-left: 300px;
+}
 
-
-
+.heading h1{
+  font-size: 5em;
 }
 
 .secondary_nav {
   margin-top: -65px;
   position: fixed;
+  top: 165px;
   z-index: 50;
   background-color:#E4E3D3;
   width: 100%;
@@ -46,25 +48,30 @@ h3, h4, h5{
 
 .content, .trackContent, .rotate-in-top, .swirl-in-fwd{
   margin-top:10px;
-
   background-color:white;
-  border-style: hidden;
-  border-width: 0.5px;
+  border-style: ridge;
+  border-width: 1px;
   padding: 20px;
   color:black;
-  border-radius: 5px;
-
+  border-radius: 1px;
+  display: inline-block;
+  width: 500px;
+  height: 600px;
+box-shadow: 5px 10px #cccccc ;
+ transition: 0.2s linear;
 
 }
 
-#sheep{
-  width: 200px;
+
+
+.content:hover, .swirl-in-fwd:hover{
+  cursor: pointer;
+  box-shadow: 5px 10px #888888;
+
 }
 
 
 .swirl-in-fwd{
-  text-align: center;
-  font-size: 1.5em;
   z-index: 10;
 }
 
@@ -247,33 +254,6 @@ img {
   width: 90%;
 }
 
-@media only screen and (max-width: 750px) {
-  .nav_menu a{
-    padding: 30px 30px;
-    margin-left: 2px;
-    margin-right:2px;
-
-  }
-  h3{
-    color: black;
-  }
-
-
-  .image img{
-    width:80%;
-    height:50%;
-  }
-
-
-
-}
-
-
-
-
-
-
-
 
 
 .secondary_nav a {
@@ -283,7 +263,8 @@ img {
 /* Slider */
 #slider{
   width:100%;
-  height:100%;
+  height:400px;
+  position:relative;
   overflow:hidden;
 }
 
@@ -294,7 +275,6 @@ img {
   -webkit-animation:slide 30s infinite;
   -moz-animation:slide 30s infinite;
   animation:slide 30s infinite;
-  bottom: 80px;
 }
 
 .slider{
@@ -306,25 +286,34 @@ img {
   overflow:hidden;
 }
 
-
+img {
+	width: 100%;
+}
 
 /* Legend */
 .legend{
-  border:300px solid transparent;
-  border-left:300px solid rgba(52, 73, 94, .7);
+  border:500px solid transparent;
+  border-left:800px solid rgba(52, 73, 94, .7);
   border-bottom:0;
   position:absolute;
   bottom:0;
 }
 
 /* Contents */
+.kontent{
+  width:100%;
+  height:100%;
+  position:absolute;
+  overflow:hidden;
+
+}
 
 .content-txt{
-  width:500px;
+  width:400px;
   height:150px;
   float:left;
   position:relative;
-  top:275px;
+  top:175px;
   -webkit-animation:content-s 7.5s infinite;
   -moz-animation:content-s 7.5s infinite;
   animation:content-s 7.5s infinite;
@@ -333,7 +322,7 @@ img {
 .content-txt h2{
   font-family:Arial;
   text-transform:uppercase;
-  font-size:14px;
+  font-size:24px;
   color:#fff;
   text-align:left;
   margin-left:30px;
@@ -342,11 +331,12 @@ img {
 
 .content-txt p{
   font-family:arial;
+  font-weight:normal;
   font-size:14px;
   font-style:italic;
   color:#fff;
-  margin-left: 30px;
-margin-right:200px;
+  text-align:left;
+  margin-left:30px;
 }
 
 /* Switch */
@@ -355,7 +345,7 @@ margin-right:200px;
   height:10px;
   position:absolute;
   bottom:50px;
-  z-index:10;
+  z-index:99;
   left:30px;
 }
 
@@ -505,4 +495,94 @@ margin-right:200px;
   Kontent: "";
   clear: both;
   display: table;
+}
+
+
+.greeting h4, .greeting h3, .greeting p{
+  font-size:3em;
+    display: inline;
+}
+.greeting h4{
+  padding-left: 300px;
+}
+
+.nav_menu, .secondary_nav {
+  display: none;
+}
+
+.wrap{
+  text-align: center;
+}
+
+.kunardi{
+  padding: 30px;
+}
+@media only screen and (max-width: 750px) {
+  .nav_menu a{
+    padding: 30px 30px;
+    margin-left: 2px;
+    margin-right:2px;
+
+  }
+  h3{
+    color: black;
+  }
+
+
+img{
+  width: 80%;
+}
+
+.content, .trackContent, .rotate-in-top, .swirl-in-fwd{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.greeting h4, .greeting h3, .greeting p{
+  font-size:1em;
+  padding-left: 10px;
+}
+
+.greeting h4{
+padding-top: 10px;
+}
+
+
+.kunardi{
+  display: none;
+}
+
+.heading h1{
+  font-size: 4em;
+}
+
+.secondary_nav {
+  margin-top: -65px;
+  position: fixed;
+  top: 150px;
+    display: block;
+}
+.nav_menu{
+  display: block;
+}
+
+.heading{
+  position: fixed;
+}
+
+body{
+  background-color: #EEEEEE;
+
+}
+
+
+
+.heading{
+  text-align: center;
+  font-size: 1em;
+  padding-left: 0px;
+  margin-left: 0px;
+}
+
+
 }
