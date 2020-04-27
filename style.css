@@ -547,7 +547,7 @@ img {
   position: absolute;
   bottom: 8px;
   left:20px;
-
+}
 
 @media only screen and (max-width: 750px) {
   .nav_menu a{
