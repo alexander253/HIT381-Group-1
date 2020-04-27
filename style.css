@@ -517,6 +517,48 @@ img {
 .kunardi{
   padding: 30px;
 }
+
+.heading h2{
+  display: inline-block;
+  float: right;
+  padding-left: 10px;
+  margin-right: 150px;
+}
+
+.footer{
+  position: absolute;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+
+
+}
+
+.footer a{
+  text-decoration: none;
+  color: #FFFFFC;
+}
+
+.footer a:hover{
+  text-decoration: underline;
+  color: #42858C;
+}
+
+
+.social-link li{
+  font-family: sans-serif;
+  text-align: center;
+  list-style: none;
+  margin: 10px 30px;
+  padding: 20px 20px;
+  display: inline;
+}
+
+
+
+
 @media only screen and (max-width: 750px) {
   .nav_menu a{
     padding: 30px 30px;
@@ -570,6 +612,8 @@ padding-top: 10px;
   position: fixed;
 }
 
+
+
 body{
   background-color: #EEEEEE;
 
@@ -583,6 +627,12 @@ body{
   padding-left: 0px;
   margin-left: 0px;
 }
+
+
+footer, .heading h2{
+  display: none;
+}
+
 
 
 }
