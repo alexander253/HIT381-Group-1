@@ -472,13 +472,25 @@ img {
 }
 
 
-.greeting h4, .greeting h3, .greeting p{
-  font-size:3em;
+.greeting h4, .greeting1 h4{
+  font-size: 3em;
+
+}
+
+.greeting h3, .greeting p, .greeting1 h3, .greeting1 p{
+  font-size:1.5em;
     display: inline;
 }
-.greeting h4{
+.greeting h4, .greeting p, .greeting1 h4, .greeting1 h3{
   padding-left: 300px;
 }
+
+.greeting{
+  background: url(img/2.jpg) 100%;
+  color: white;
+}
+
+
 
 .nav_menu, .secondary_nav {
   display: none;
@@ -571,7 +583,7 @@ img{
   height: 100%;
 
 }
-.greeting h4, .greeting h3, .greeting p{
+.greeting h4, .greeting h3, .greeting p, .greeting1 h4, .greeting1 h3, .greeting1 p{
   font-size:1em;
   padding-left: 10px;
 }
@@ -580,6 +592,9 @@ img{
 padding-top: 10px;
 }
 
+.greeting h4, .greeting p, {
+  padding-left: 300px;
+}
 
 .kunardi{
   display: none;
