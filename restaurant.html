@@ -2,12 +2,15 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" name="Description" content="home">
-    <title>home</title>
+    <title>KFC</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   </head>
 
 <!--Heading-->
@@ -15,7 +18,8 @@
 <body>
   <div class="heading">
     <h1 id="uwu">UwU</h1> <h1>Foods</h1>
-    <h2>Help</h2><h2>Login</h2>
+    <h2><button type="button" class="logbtn btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button></h2>
+    <h2><button class="logbtn clear-cart btn btn-danger">Cancel</button></div></h2>
   </div>
 
   <div class="secondary_nav">
@@ -24,13 +28,109 @@
   </div>
 
   <div class="greeting">
-      <h4>KFC (Darwin)</h4> <br>
+      <h4 class="text-capitalize">KFC <strong class="banner-title ">(Darwin)</strong></h4> <br>
       <p>Fried chicken, Takeaway</p> <br>
         <p>247 Trower Rd, Casuarina Nt 0810, Australia, 149, </p> <br>
         <p>Close: 8pm</p>
 
   </div>
 
+<!-- Main -->
+<div class="container">
+    <div class="row">
+
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+  <img class="card-img-top zoom" src="img/1.jpg" alt="KFC">
+  <div class="card-block">
+    <h4 class="card-title">KFC</h4>
+    <p class="card-text">Price: $10.95</p>
+    <a href="#" data-name="KFC" data-price="10.95" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+  <img class="card-img-top zoom" src="img/2.jpg" alt="Macdonalds">
+  <div class="card-block">
+    <h4 class="card-title">Macdonalds</h4>
+    <p class="card-text">Price: $12.95</p>
+    <a href="#" data-name="Macdonalds" data-price="12.95" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+  <img class="card-img-top zoom" src="img/3.jpg" alt="Hungry Jack's">
+  <div class="card-block">
+    <h4 class="card-title">Hungry Jack's</h4>
+    <p class="card-text">Price: $11.95</p>
+    <a href="#" data-name="Hungry Jack's" data-price="11.95" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+  <img class="card-img-top zoom" src="img/4.jpg" alt="Red Rooster">
+  <div class="card-block">
+    <h4 class="card-title">Red Rooster</h4>
+    <p class="card-text">Price: $17.95</p>
+    <a href="#" data-name="Red Rooster" data-price="17.95" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+
+    </div>
+</div>
+
+
+ <!-- Modal -->
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="show-cart table">
+          <div class="cart-row">
+              <span class="cart-item cart-header cart-column">ITEM</span>
+              <span class="cart-price cart-header cart-column">PRICE</span>
+              <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+              <span class="cart-TOTAL cart-header cart-column">TOTAL</span>
+                </div>
+        </table>
+        <div class="basket-module">
+        <label for="promo-code">Enter a promotional code</label>
+        <input id="promo-code" type="text" name="promo-code" maxlength="5" class="promo-code-field">
+        <button class="promo-code-cta">Apply</button>
+        </div>
+        <div>Total price: $<span class="total-cart"></span></div>
+        <br>
+                <div class="summary-delivery">
+                  <select name="delivery-collection" class="summary-delivery-selection">
+                      <option value="0" selected="selected">Select Delivery Method</option>
+                     <option value="collection">Pick up</option>
+                     <option value="first-class">Bicycle</option>
+                     <option value="second-class">Scooter</option>
+                     <option value="signed-for">Car</option>
+                     <option value="signed-for">Drone</option>
+                  </select>
+                </div>
+      </div>
+      <div class="modal-footer">
+        <button class="clear-cart btn btn-danger" data-dismiss="modal"  onclick="myFunction()">Order now</button>
+
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <!--Content cards/menu items-->
@@ -127,5 +227,6 @@
 
 
   </body>
-    <script src="rest.js"></script>
+    <script src="Order.js">
+    </script>
 </html>
