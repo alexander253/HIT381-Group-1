@@ -15,9 +15,9 @@
 
 <!--Heading-->
 
-<body>
+<body id="overide">
   <div class="heading">
-    <h1 id="uwu">UwU</h1> <h1>Foods</h1>
+    <a href="index.html"><h1 id="uwu">UwU</h1> <h1>Foods</h1></a>
     <h2><button type="button" class="logbtn btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button></h2>
     <h2><button class="logbtn clear-cart btn btn-danger">Cancel</button></div></h2>
   </div>
@@ -28,11 +28,12 @@
   </div>
 
   <div class="greeting">
-      <h4 class="text-capitalize">KFC <strong class="banner-title ">(Darwin)</strong></h4> <br>
+    <div class="white-background">
+      <h4 class="text-capitalize">KFC</h4> <br>
       <p>Fried chicken, Takeaway</p> <br>
-        <p>247 Trower Rd, Casuarina Nt 0810, Australia, 149, </p> <br>
+        <p>247 Trower Rd, Casuarina Nt 0810</p> <br>
         <p>Close: 8pm</p>
-
+            </div>
   </div>
 
  <!-- Modal -->
@@ -88,11 +89,10 @@
 <div class="wrap">
 
   <div class="mItem" >
-            <div class="overlay"><h3>Family Bucket $25</h3></div>
+      <div class="overlay"><h3>Family Bucket $25</h3></div>
       <img src="img/1.jpg" alt="kfc" >
       <a href="#" data-name="Family bucket" data-price="25" class="add-to-cart btn btn-primary">Add to cart</a>
   </div>
-
 
     <div class="mItem">
       <img src="img/2.jpg" alt="">
@@ -110,8 +110,31 @@
       <div class="overlay"><h3>Whole Chicken $20</h3></div>
       <img src="img/4.jpg" alt="">
       <a href="#" data-name="Whole chiken" data-price="20" class="add-to-cart btn btn-primary">Add to cart</a>
-
     </div>
+
+    <div class="mItem" >
+        <div class="overlay"><h3>Family Bucket $25</h3></div>
+        <img src="img/1.jpg" alt="kfc" >
+        <a href="#" data-name="Family bucket" data-price="25" class="add-to-cart btn btn-primary">Add to cart</a>
+    </div>
+
+      <div class="mItem">
+        <img src="img/2.jpg" alt="">
+        <a href="#" data-name="Zinger Burger" data-price="9" class="add-to-cart btn btn-primary">Add to cart</a>
+        <div class="overlay"><h3>Zinger Burger $9</h3></div>
+      </div>
+
+      <div class="mItem">
+        <a href="#" data-name="Hot Burger" data-price="15" class="add-to-cart btn btn-primary">Add to cart</a>
+        <div class="overlay"><h3>Hot n Spicy Burger $15</h3></div>
+        <img src="img/3.jpg" alt="">
+      </div>
+
+      <div class="mItem">
+        <div class="overlay"><h3>Whole Chicken $20</h3></div>
+        <img src="img/4.jpg" alt="">
+        <a href="#" data-name="Whole chiken" data-price="20" class="add-to-cart btn btn-primary">Add to cart</a>
+      </div>
 
 
 

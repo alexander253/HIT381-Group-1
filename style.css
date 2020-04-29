@@ -1,9 +1,6 @@
 body{
   background-color: white;
-  margin-top: 130px;
-  margin-bottom: 130px;
   font-family: 'Roboto', sans-serif;
-
 }
 
 h3, h4, h5{
@@ -11,7 +8,6 @@ h3, h4, h5{
 }
 
 .heading {
-  margin-top: -130px;
   text-align: left;
   position: static;
   width: 100%;
@@ -520,12 +516,13 @@ img {
     display: inline;
 }
 .greeting h4, .greeting p, .greeting1 h4, .greeting1 h3{
-  padding-left: 300px;
+  padding-left: 10px;
 }
 
 .greeting{
-  background: url(img/2.jpg) 100%;
+  background: url(img/kfc.jpg) 100%;
   color: white;
+  height: 250px;
 }
 
 .nav_menu, .secondary_nav {
@@ -661,11 +658,33 @@ img {
 }
 .mItem a{
   right: 30px;
+  background-color: green;
 }
 
 
 i {
   color: green;
+}
+
+a i{
+  color: white;
+}
+
+#overide{
+  margin: 0px;
+}
+
+.white-background{
+  width: 30%;
+  color: black;
+  background-color: white;
+  display: block;
+  margin-left: 20px;
+  border-radius: 3px;
+  margin-top: 50px;
+  position: absolute;
+  top: 80px;
+  left: 140px;
 }
 
 /*Mobile Display*/
@@ -693,6 +712,8 @@ img{
   height: 100%;
 
 }
+
+
 .greeting h4, .greeting h3, .greeting p, .greeting1 h4, .greeting1 h3, .greeting1 p{
   font-size:1em;
   padding-left: 10px;
@@ -703,7 +724,7 @@ padding-top: 10px;
 }
 
 .greeting h4, .greeting p, {
-  padding-left: 300px;
+  padding-left: 10px;
 }
 
 .kunardi{
@@ -717,16 +738,13 @@ padding-top: 10px;
 .secondary_nav {
   margin-top: -65px;
   position: fixed;
-  top: 150px;
+  top: 155px;
   display: block;
 }
 .nav_menu{
   display: block;
 }
 
-.heading{
-  position: fixed;
-}
 
 
 
@@ -740,6 +758,8 @@ body{
   font-size: 1em;
   padding-left: 0px;
   margin-left: 0px;
+  position: fixed;
+  top: 0;
 }
 
 
@@ -752,5 +772,11 @@ footer{
   left: -15px;
 }
 
+.white-background{
+  font-size: 1.5em;
+  width: 60%;
+  margin: 0;
+  left: 10px;;
+}
 
 }
