@@ -4,8 +4,8 @@
     <meta charset="utf-8" name="Description" content="home">
     <title>home</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
@@ -30,23 +30,16 @@
 </div>
 
 <button class="open-button" onclick="openForm()">Chat</button>
-<div class="chat-popup" id="myForm">
-  <form action="/action_page.php" class="form-container">
-    <h1>Chat</h1>
-    <label for="msg"><b>Type here. . </b></label>
-    <textarea placeholder="Type message.." name="msg" required></textarea>
-    <button type="submit" class="btn">Send</button>
-    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-  </form>
-</div>
-<script>
-function openForm() {
-  document.getElementById("myForm").style.display = "block";
-}
-function closeForm() {
-  document.getElementById("myForm").style.display = "none";
-}
-</script>
+  <div class="chat-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+      <h1>Chat</h1>
+      <label for="msg"><b>Type here. . </b></label>
+      <textarea placeholder="Type message.." name="msg" required></textarea>
+      <button type="submit" class="btn">Send</button>
+      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+  </div>
+
 <!--Kunardi's home page slider-->
   <section class="kunardi">
         <div id="slider">
@@ -62,7 +55,6 @@ function closeForm() {
                   </div>
                 </div>
                    <img src="himg/1.jpg" alt="KFC">
-
               </div>
             <div class="slider">
               <div class="legend">
@@ -70,11 +62,11 @@ function closeForm() {
                 <div class="kontent">
                   <div class="content-txt">
                   <h2>McDonald's PROMOTION</h2>
-                  <p>BiG MaC Meal <b>only $10</b> . Term and condition apply. Hurry, available until 31/05/2020, only at Casuarina Department store, NT.</p>
+                  <p>BiG MaC Meal <b>only $10</b> . Term and condition apply. Hurry, available until 31/05/2020,
+                    only at Casuarina Department store, NT.</p>
                   </div>
                 </div>
                      <img src="himg/2.jpg" alt="McDonald's">
-
               </div>
               <div class="slider">
                 <div class="legend">
@@ -82,7 +74,8 @@ function closeForm() {
                   <div class="kontent">
                     <div class="content-txt">
                     <h2>Hungry Jack's PROMOTION</h2>
-                    <p>Tropical Whopper Meal <b>only $9</b> . Term and condition apply. Hurry, Promotion will end at 31/07/2020, and only at Casuarina Department store, NT.</p>
+                    <p>Tropical Whopper Meal <b>only $9</b> . Term and condition apply. Hurry, Promotion will end at 31/07/2020,
+                      and only at Casuarina Department store, NT.</p>
                     </div>
                   </div>
                     <img src="himg/3.jpg" alt="Hungry Jack's">
@@ -113,6 +106,8 @@ function closeForm() {
                   </div>
             </div>
       </section>
+
+
 
       <!--About Us-->
       <div class="container">
@@ -147,41 +142,38 @@ function closeForm() {
 <div class="wrap">
 
   <div class="content">
-            <div class="overlay"><h3>KFC</h3></div>
+    <div class="overlay"><h3>KFC</h3></div>
       <img src="img/1.jpg" alt="kfc" >
       <p><a href="restaurant.html">KFC ONLY $10</a></p>
 
-  </div>
+    </div>
 
 
     <div class="content">
       <img src="img/2.jpg" alt="">
-            <div class="overlay"><h3>Macdonalds</h3></div>
+      <div class="overlay"><h3>Macdonalds</h3></div>
       <p>Big mac meal only $10</p>
     </div>
 
     <div class="content">
-            <div class="overlay"><h3>Hungry Jacks</h3></div>
+      <div class="overlay"><h3>Hungry Jacks</h3></div>
       <img src="img/3.jpg" alt="">
       <p>Whopper meal $9</p>
     </div>
 
     <div class="content">
-            <div class="overlay"><h3>Red Rooster</h3></div>
+      <div class="overlay"><h3>Red Rooster</h3></div>
       <img src="img/4.jpg" alt="">
       <p>$15 Meal</p>
     </div>
-
-    </div>
+</div>
 
 <!--Mobile bottom nav-->
-
-    <div class="nav_menu">
-      <a href="index.html"><span class="glyphicon glyphicon-home"></span><br>Home</a>
-      <a href="myorder.html"><span class="glyphicon glyphicon-time"></span><br>My Order</a>
-      <a href="account.html"><span class="glyphicon glyphicon-user"></span><br>Account</a>
-
-    </div>
+  <div class="nav_menu">
+        <a href="index.html"><span class="glyphicon glyphicon-home"></span><br>Home</a>
+        <a href="myorder.html"><span class="glyphicon glyphicon-time"></span><br>My Order</a>
+        <a href="account.html"><span class="glyphicon glyphicon-user"></span><br>Account</a>
+  </div>
 
 <!--Footer for desktop view-->
 <footer>
@@ -195,6 +187,7 @@ function closeForm() {
       <li><a href="https://www.youtube.com/channel/UCKCcLzf49llRjQbNq3llFCg" target="self"> <i class="fa fa-3x fa-youtube-square"> </i>YouTube</a></li>
     </ul>
   </div>
+
   <div class="footer-desc">
     <p>Authorised by: <a href="https://www.cdu.edu.au/academic-language-learning/allsp">ALLSP</a> | Last updated: April 27, 2020</p>
     <p>ABN 54 093 513 649 | <a href="http://www.cdu.edu.au/governance/doclibrary/pol-032.pdf">Privacy Statement</a> | <a href="https://www.cdu.edu.au/about/copyright">Copyright and Disclaimer</a> | CRICOS Provider No: 00300K</p>
@@ -204,4 +197,13 @@ function closeForm() {
 
   </body>
     <script src="home.js"></script>
+    
+    <script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+    </script>
 </html>
