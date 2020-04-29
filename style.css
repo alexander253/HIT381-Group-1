@@ -649,15 +649,20 @@ img {
 
 .mItem .overlay{
   position: absolute;
-  top: 15px;
-  left: 80px;
+  top: 80px;
+  left: 140px;
 }
 
-.mItem p{
+.mItem p, .mItem a{
   position: absolute;
   bottom: 8px;
   left:20px;
+  display:block;
 }
+.mItem a{
+  right: 30px;
+}
+
 
 i {
   color: green;
