@@ -49,6 +49,21 @@ h3, h4, h5{
 #uwu{
   color: white;
 }
+.content p{
+  float: left;
+}
+.rating{
+  display: block;
+  position: absolute;
+bottom: 8px;
+left: 16px;
+}
+.delivery_time{
+  display: block;
+  position: absolute;
+bottom: 18px;
+left: 16px;
+}
 
 .content, .mItem{
   margin-top:10px;
@@ -61,7 +76,6 @@ h3, h4, h5{
   display: inline-block;
   width: 500px;
   height: 600px;
-
   transition: 0.2s linear;
   position: relative;
   text-align: center;
@@ -262,6 +276,7 @@ h3, h4, h5{
 
 img {
   width: 90%;
+
 }
 
 
@@ -643,7 +658,10 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+.content h3{
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
 .mItem .overlay{
