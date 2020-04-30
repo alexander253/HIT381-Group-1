@@ -61,7 +61,7 @@ h3, h4, h5{
   display: inline-block;
   width: 500px;
   height: 600px;
-  box-shadow: 5px 10px #cccccc ;
+
   transition: 0.2s linear;
   position: relative;
   text-align: center;
@@ -100,22 +100,24 @@ h3, h4, h5{
 }
 
 .nav_menu{
-  background-color: black;
+  background-color: white;
   position: fixed;
   bottom: 0px;
   width: 100%;
   text-align: center;
   width: 100%;
   z-index: 50;
+    border-style: ridge;
 
  }
 
 .nav_menu a{
   display: inline-block;
-  color: white;
+  color: black;
   padding: 30px 100px;
   text-decoration: none;
   margin-bottom: 5px;
+
 
 
 }
@@ -154,7 +156,6 @@ h3, h4, h5{
 .my-5{margin-top:0rem!important}
 .my-5{margin-bottom:0rem!important}
 
-.text-capitalize{text-transform:capitalize!important}
 
 .banner-title {
   color: var(--mainGreen);
@@ -642,6 +643,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
 .mItem .overlay{
@@ -700,6 +702,7 @@ a i{
     margin-right:2px;
     margin-bottom: 10px;
 
+
   }
   h3{
     color: black;
@@ -736,7 +739,7 @@ padding-top: 10px;
 }
 
 .heading h1{
-  font-size: 4em;
+  font-size: 3em;
 }
 
 .secondary_nav {
@@ -747,6 +750,8 @@ padding-top: 10px;
 }
 .nav_menu{
   display: block;
+      height: 10%;
+      margin-top: 30px;
 }
 
 
@@ -764,7 +769,10 @@ body{
   margin-left: 0px;
   position: fixed;
   top: 0;
+  height: 8%;
+
 }
+
 
 
 footer, .heading h2{
@@ -782,5 +790,10 @@ footer{
   margin: 0;
   left: 10px;;
 }
+
+.banner-title {
+  font-size: .7em;
+  float: left;
+
 
 }
