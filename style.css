@@ -272,8 +272,17 @@ input[type="email"], input[type="number"]{
   display:flex;
   -ms-flex-wrap:wrap;
   flex-wrap:wrap;
-  margin-right:-15px;
-  margin-left:-215px
+  margin-right:42px;
+  margin-left:52px
+}
+
+.row1{
+  display:-ms-flexbox;
+  display:flex;
+  -ms-flex-wrap:wrap;
+  flex-wrap:wrap;
+  margin-right:42px;
+  margin-left:52px
 }
 
 .col-10{
@@ -340,7 +349,7 @@ input[type="email"], input[type="number"]{
   padding-left: 0;
   margin-right: auto;
   margin-top: 20px;
-  margin-left: auto;
+  margin-left: 57px;
 }
 
 .container1{
@@ -348,7 +357,7 @@ input[type="email"], input[type="number"]{
   padding-right: 0;
   padding-left: 0;
   margin-top: 20px;
-  margin-left: 8%;
+  margin-left: 300px;
 }
 
 .container2{
@@ -356,7 +365,7 @@ input[type="email"], input[type="number"]{
   padding-right: 0;
   padding-left: 0;
   margin-top: 300px;
-  margin-left: auto;
+  margin-left: 145px;
 }
 
 .container3{
