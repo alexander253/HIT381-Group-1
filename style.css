@@ -273,7 +273,7 @@ input[type="email"], input[type="number"]{
   -ms-flex-wrap:wrap;
   flex-wrap:wrap;
   margin-right:-15px;
-  margin-left:20px
+  margin-left:-215px
 }
 
 .col-10{
@@ -349,6 +349,22 @@ input[type="email"], input[type="number"]{
   padding-left: 0;
   margin-top: 20px;
   margin-left: 8%;
+}
+
+.container2{
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  margin-top: 300px;
+  margin-left: auto;
+}
+
+.container3{
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  margin-top: -21px;
+  margin-left: 200px;
 }
 
 *, ::after,
