@@ -91,18 +91,17 @@
                       </div>
                     </div>
                        <img src="himg/4.jpg" alt="Red Rooster">
-
                   </div>
             </div>
                   <div class="switch">
                     <ul>
-                      <li>
-                        <div class="on"></div>
-                      </li>
+                      <li><div class="on"></div></li>
                       <li></li>
                       <li></li>
                       <li></li>
                     </ul>
+                    <a class="prev" onclick="plusDivs(-1)" style="margin-right:115px;">&#10094;</a>
+                    <a class="next" onclick="plusDivs(+1)" style="margin-left:-36px;">&#10095;</a>
                   </div>
             </div>
       </section>
@@ -247,6 +246,16 @@
         <a href="index.html"><span class="glyphicon glyphicon-home"></span><br>Home</a>
         <a href="myorder.html"><span class="glyphicon glyphicon-time"></span><br>My Order</a>
         <a href="account.html"><span class="glyphicon glyphicon-user"></span><br>Account</a>
+        <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a href="SignUp.html">Login/ Signup</a>
+  <a href="myorder.html">My Cart</a>
+  <a href="history.html">About US</a>
+  <a href="WhatMakeusDifferent.html">What Make us Different</a>
+  <a href="help.html">Help</a>
+</div>
+<span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776;</span>
   </div>
 
 <!--Footer for desktop view-->
@@ -271,13 +280,4 @@
 
   </body>
     <script src="home.js"></script>
-
-    <script>
-    function openForm() {
-      document.getElementById("myForm").style.display = "block";
-    }
-    function closeForm() {
-      document.getElementById("myForm").style.display = "none";
-    }
-    </script>
 </html>
